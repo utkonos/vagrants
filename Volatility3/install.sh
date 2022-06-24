@@ -14,7 +14,7 @@ wget --no-verbose --show-progress --progress=bar:force -P /tmp https://github.co
 tar -zxvf /tmp/v4.2.1.tar.gz -C /tmp
 cd /tmp/yara-4.2.1/
 ./bootstrap.sh
-./configure --enable-cuckoo --enable-magic --with-crypto
+./configure --enable-cuckoo --enable-magic --enable-macho --enable-dex --with-crypto
 make
 make check
 make install
