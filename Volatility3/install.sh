@@ -29,3 +29,6 @@ pip list -o --format json | jq -r '.[].name' | xargs -n 1 pip install -U
 pip install wheel
 pip install pefile yara-python capstone volatility3
 EOF
+
+## Reboot
+reboot
