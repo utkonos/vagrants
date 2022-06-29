@@ -27,7 +27,7 @@ python3 -m venv /home/vagrant/venv
 source /home/vagrant/venv/bin/activate
 pip list -o --format json | jq -r '.[].name' | xargs -n 1 pip install -U
 pip install wheel
-pip install pefile yara-python capstone volatility3
+pip install pefile yara-python capstone pycryptodome volatility3
 EOF
 
 ## Reboot
