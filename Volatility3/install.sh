@@ -10,9 +10,9 @@ apt-get autoclean -y
 
 ## Install YARA
 apt-get install -y build-essential automake libtool pkg-config libjansson-dev libmagic-dev libssl-dev
-wget --no-verbose --show-progress --progress=bar:force -P /tmp https://github.com/VirusTotal/yara/archive/refs/tags/v4.2.1.tar.gz 2>&1
-tar -zxvf /tmp/v4.2.1.tar.gz -C /tmp
-cd /tmp/yara-4.2.1/
+wget --no-verbose --show-progress --progress=bar:force -P /tmp https://github.com/VirusTotal/yara/archive/refs/tags/v4.2.2.tar.gz 2>&1
+tar -zxvf /tmp/v4.2.2.tar.gz -C /tmp
+cd /tmp/yara-4.2.2/
 ./bootstrap.sh
 ./configure --enable-cuckoo --enable-magic --enable-macho --enable-dex --with-crypto
 make
