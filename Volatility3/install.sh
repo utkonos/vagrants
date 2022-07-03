@@ -29,6 +29,7 @@ pip list -o --format json | jq -r '.[].name' | xargs -n 1 pip install -U
 pip install wheel
 pip install pefile yara-python capstone pycryptodome volatility3
 EOF
+echo -e '\nsource venv/bin/activate' | tee -a /home/vagrant/.profile
 
 ## Reboot
 reboot
